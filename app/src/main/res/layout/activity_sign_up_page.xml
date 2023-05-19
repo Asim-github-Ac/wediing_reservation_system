@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF6FF"
+    tools:context=".Authentication.SignUpPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="690dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textview"
+                    android:layout_marginTop="20sp"
+                    android:text="Wedding reservation system"
+                    android:textColor="#056ad5"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    style="@style/textview"
+                    android:layout_marginTop="20sp"
+                    android:text="Register Now"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/reg_name"
+                    style="@style/edittext"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:hint="First name"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/reg_city"
+                    style="@style/edittext"
+                    android:drawableLeft="@drawable/city"
+                    android:hint="Enter City name"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/reg_phone"
+                    style="@style/edittext"
+                    android:hint="Enter Phonenumber"
+                    android:drawableLeft="@drawable/phone_call"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    style="@style/edittext"
+                    android:drawableStart="@drawable/ic_baseline_email"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"/>
+
+                <EditText
+                    android:id="@+id/reg_pass"
+                    style="@style/edittext"
+                    android:drawableStart="@drawable/padlockpass"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+                <Spinner
+                    android:id="@+id/simpleSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="22dp" />
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/blue"
+                    android:text="CREATE NEW ACCOUNT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Already have account?"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvloginid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textStyle="bold"
+                        android:textColor="#056ad5"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

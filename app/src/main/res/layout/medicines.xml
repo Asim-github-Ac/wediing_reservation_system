@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ECE7E7"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        android:background="@color/white">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="10dp"
+           android:background="@color/white">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Patient Name :"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Patient Name :"
+               android:layout_marginTop="5dp"
+               android:textColor="@color/black"
+               android:id="@+id/pitemname"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Medicine Name :"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Medicine Name :"
+               android:layout_marginTop="5dp"
+               android:textColor="@color/black"
+               android:id="@+id/pitemmediname"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Phone :"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Phone :"
+               android:layout_marginTop="5dp"
+               android:textColor="@color/black"
+               android:id="@+id/pitemphone"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Address :"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Address :"
+               android:layout_marginTop="5dp"
+               android:textColor="@color/black"
+               android:id="@+id/pitemaddres"/>
+
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
